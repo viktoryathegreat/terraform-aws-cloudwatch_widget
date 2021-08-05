@@ -28,8 +28,8 @@ data "template_file" "properties" {
     period = "${var.period}"
     region = "${var.region}"
     stacked = "${var.stacked ? "true" : "false"}"
-    stat = "${var.stat}",
-    title = "${var.title == 0 ? "${var.namespace} ${var.metric_name}" : var.title}",
+    stat = "${var.stat}"
+    title = "${var.title == 0 ? "${var.namespace} ${var.metric_name}" : var.title}"
     view = "${var.view}"
   }
 }
